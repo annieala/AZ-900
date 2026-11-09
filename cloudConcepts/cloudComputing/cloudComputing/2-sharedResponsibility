@@ -1,0 +1,162 @@
+# Cloud Deployment Models
+
+## Definition
+
+**Cloud models** define the **deployment type** of cloud resources: how they are deployed and managed.
+
+The three main models are **private**, **public**, and **hybrid**. A fourth, **multicloud**, is increasingly common.
+
+## At a Glance
+
+| Model          | What it is                          | Managed by           | Who uses it                        |
+| -------------- | ----------------------------------- | -------------------- | ---------------------------------- |
+| **Private**    | Cloud dedicated to one organization | You or a third party | A single organization              |
+| **Public**     | Provider-owned infrastructure       | Cloud provider       | The general public                 |
+| **Hybrid**     | Private + public, interconnected    | You + provider       | Your organization across both      |
+| **Multicloud** | Two or more public cloud providers  | You + providers      | Your organization across providers |
+
+---
+
+## 🔒 Private Cloud
+
+A cloud environment used by a **single entity**.
+
+**Key points**
+
+- Evolved naturally from the traditional datacenter model: delivers IT services over the internet while keeping resources dedicated to one organization
+- Can be hosted **on-site** in your own datacenter or **off-site** in a dedicated datacenter, potentially run by a third party
+- Gives your IT team **much greater control**
+
+| ✅ Pros                                            | ❌ Cons                                                     |
+| -------------------------------------------------- | ----------------------------------------------------------- |
+| Complete control over resources and security       | Hardware must be purchased for startup and maintenance      |
+| Data is **not** colocated with other tenants' data | You're responsible for hardware **maintenance and updates** |
+|                                                    | Greater cost, fewer of the public cloud's benefits          |
+
+---
+
+## 🌐 Public Cloud
+
+Built, controlled, and maintained by a **third-party cloud provider**. Anyone who wants to purchase cloud services can access and use the resources.
+
+> **Key difference from private cloud:** public cloud is available to the **general public**.
+
+| ✅ Pros                                                   | ❌ Cons                                                     |
+| --------------------------------------------------------- | ----------------------------------------------------------- |
+| No capital expenditure to scale up                        | You don't have complete control over resources and security |
+| Applications can be quickly provisioned and deprovisioned |                                                             |
+| Pay only for what you use                                 |                                                             |
+| Provider manages security and infrastructure for you      |                                                             |
+
+---
+
+## 🔀 Hybrid Cloud
+
+Uses **both public and private clouds** in an interconnected environment.
+
+**Use cases**
+
+- **Surge capacity:** a private cloud can burst into the public cloud for temporary increased demand
+- **Extra security layer:** you choose which services stay in the public cloud and which go on your private cloud infrastructure
+
+**Benefits**
+
+- Provides the **most flexibility**
+- You determine where to run your applications
+- You control security, compliance, and legal requirements
+
+---
+
+## ☁️☁️ Multicloud
+
+Using **two or more public cloud providers** and managing resources and security across all of them.
+
+**Why organizations end up multicloud**
+
+- Using **different features** from different providers
+- **Migrating** from one provider to another (mid-journey)
+
+**Key points**
+
+- Increasingly common deployment scenario
+- You manage resources and security across multiple environments
+
+---
+
+## Comparison Summary
+
+| Public cloud                             | Private cloud                                | Hybrid cloud                            |
+| ---------------------------------------- | -------------------------------------------- | --------------------------------------- |
+| No capital expenditure to scale up       | Complete control over resources and security | Most flexibility                        |
+| Quick provisioning and deprovisioning    | Data not colocated with other tenants        | You choose where apps run               |
+| Pay only for what you use                | Must purchase hardware                       | You control security, compliance, legal |
+| Less control over resources and security | You handle hardware maintenance and updates  |                                         |
+
+---
+
+## Azure Tools for These Models
+
+### Azure Arc
+
+A set of technologies that helps you **manage your cloud environment, whatever the model**:
+
+- Public cloud solely on Azure
+- Private cloud in your datacenter
+- Hybrid configuration
+- Multicloud across several providers at once
+
+### Azure VMware Solution
+
+**Scenario:** You already run VMware in a private cloud and want to move to a public or hybrid cloud.
+
+Azure VMware Solution lets you run those **VMware workloads in Azure** with seamless integration and scalability.
+
+---
+
+## Memory Hooks
+
+- **Private** = _control_ (but you pay for it)
+- **Public** = _convenience_ (but less control)
+- **Hybrid** = _flexibility_ (best of both)
+- **Multicloud** = _multiple providers_
+- **Azure Arc** = manage _anything, anywhere_
+- **Azure VMware Solution** = bring _VMware_ to Azure
+
+---
+
+## Self-Test Questions
+
+1. What do cloud models define?
+2. Name the three main cloud models and the fourth emerging one.
+3. Where can a private cloud be hosted?
+4. What is the main advantage and the main drawback of a private cloud?
+5. Why is there no capital expenditure to scale up in the public cloud?
+6. Which model provides the most flexibility?
+7. Describe how a hybrid cloud handles a temporary spike in demand.
+8. Give two reasons an organization might be multicloud.
+9. What is the difference between hybrid cloud and multicloud?
+10. What does Azure Arc do?
+11. What does Azure VMware Solution let you do?
+12. What is the key difference between public and private clouds?
+13. How does a hybrid cloud provide an extra layer of security?
+14. Who is Azure VMware Solution designed for?
+
+<details>
+<summary>Answers</summary>
+
+1. The deployment type of cloud resources (how they're deployed and managed).
+2. Private, public, hybrid; multicloud.
+3. On-site in your own datacenter, or off-site in a dedicated datacenter (possibly run by a third party).
+4. Advantage: complete control over resources and security. Drawback: you must buy and maintain the hardware, so it costs more.
+5. The provider owns the infrastructure; you pay only for what you use.
+6. Hybrid cloud.
+7. The private cloud surges into the public cloud by deploying public cloud resources temporarily.
+8. To use different features from different providers, or because they're migrating from one provider to another.
+9. Hybrid combines private + public cloud; multicloud uses two or more _public_ cloud providers.
+10. Helps manage cloud environments of any model: Azure-only, private, hybrid, or multicloud.
+11. Run VMware workloads in Azure with seamless integration and scalability.
+12. Public cloud is available to the general public; private cloud is dedicated to one organization.
+13. You choose which services stay in the public cloud and which go on your private infrastructure.
+14. Organizations already running VMware in a private cloud who want to move to a public or hybrid cloud.
+
+</details>
